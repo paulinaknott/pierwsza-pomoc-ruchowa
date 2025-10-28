@@ -1,0 +1,171 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background: white;
+    padding: 0 2rem;
+    color: #333;
+    text-align: justify;
+}
+
+.avatar {
+    width: 100%;
+    max-width: 400px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ebookImage {
+    max-height: 70vh;
+    width: auto;
+}
+
+.section {
+    max-width: 1300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    margin: 48px 0;
+}
+
+
+.section__imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__description {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.section__subtitle {
+    text-align: left;
+    margin: 12px 0;
+    color: #5d5e5e;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.section__title {
+    margin: 0;
+    text-align: left;
+    font-size: 48px;
+    color: #262727;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.section__linkWrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.downloadLink {
+    margin-top: 2em;
+    display: inline-block;
+    padding: 16px 32px;
+    font-size: 14px;
+    color: #262727;
+    background: #f0ce15;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+    border: none;
+    outline: none;
+    height: auto;
+    border-radius: 36px;
+}
+
+.downloadLink:hover {
+    background: #f6e299;
+}
+
+.included__item {
+    padding: 0.5rem;
+}
+
+/* Header Layout */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+}
+
+/* Social Media Section */
+.socials {
+    display: flex;
+    gap: 1rem;
+    color: #2f7388;
+}
+
+/* Individual Link Styling */
+.social__link {
+    color: #2f7388;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+/* Hover State */
+.social__link:hover {
+    color: #f0ce15; /* highlight color */
+}
+
+.ebook__content-separator {
+    width: 100%;
+    max-width: 1200px;
+    height: 1px;
+    padding: 0 5%;
+    display: block;
+    margin: 0 auto;
+    background-color: #f7f6f6;
+}
+
+.included__title,
+.overview__title {
+    margin-top: 0;
+}
+
+
+@media (max-width: 800px) {
+    .section {
+        grid-template-columns: 1fr;
+        margin: 16px 0;
+        gap: 16px;
+    }
+
+    .section__linkWrapper {
+        width: 100%;
+    }
+
+    .downloadLink {
+        width: 100%;
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    .ebookImage {
+        max-height: 50vh;
+    }
+
+    .section__title {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .header {
+        padding: 1rem 0;
+    }
+}
